@@ -32,7 +32,7 @@ mongoose.connect(dbConfig.url, {
 // Require Users routes
 const deviceRoutes = require('./src/routes/device.routes')
 // using as middleware
-app.use('/devices', deviceRoutes)
+app.use('/', deviceRoutes)
 
 // listen for requests
 app.listen(port, () => {
