@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "node-js-server",
   "version": "0.3.0",
-  "description": "A sample Node.js app using Express 4",
+  "description": "device management",
   "engines": {
     "node": "14.x"
   },

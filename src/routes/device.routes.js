@@ -7,15 +7,8 @@ router.get('/', deviceController.findAll);
 
 
 // Create a new user
-router.post('/create', deviceController.create);
+router.post('/', deviceController.create);
 
-// Retrieve a single user with id
-router.get('/:id', deviceController.findOne);
 
-// Update a user with id
-router.put('/:id', deviceController.update);
-
-// Delete a user with id
-router.delete('/:id', deviceController.delete);
 
 module.exports = router
