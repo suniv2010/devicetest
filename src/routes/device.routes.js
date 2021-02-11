@@ -3,18 +3,7 @@ const router = express.Router()
 const deviceController = require('../controllers/device.controllers');
 
 // Retrieve all users
-router.get('/',function (req, res) {
-    res.send(`
-    {
-        "name": "Start on Heroku: Node.js",
-        "description": "A barebones Node.js app using Express 4",
-        "repository": "https://github.com/heroku/node-js-getting-started",
-        "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
-        "keywords": ["node", "express", "heroku"],
-        "image": "heroku/nodejs"
-      }
-      `)
-});
+router.get('/', deviceController.findAll);
 
 
 // Create a new user
